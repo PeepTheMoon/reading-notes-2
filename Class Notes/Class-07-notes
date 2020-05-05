@@ -43,3 +43,6 @@ app.get('*', (req, res) => ...) to make a fallback response.  This must be at th
 heroku login deploys the backend.   May need to install heroku cli, triple check!
 
 heroku create starts a heorku app.
+
+heroku will use any available port, and sometimes the one we normally use will not be available.  
+
