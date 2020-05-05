@@ -1,0 +1,45 @@
+Today the lab has endpoints that are hard-coded: location and hard coded weather.  They are an array of objects.
+
+There's a lot of setup required to work in backend
+
+need to install a list of dependencies to package.json:
+npm i express dotenv cors
+
+package.json has npm test to run tests.  Add "start": "node index.js"
+when you run npm start from the terminal, it will run node which allows us to touch files in the server or api
+
+run npm i -g nodemon from terminal
+this allows you to not have to run nodemon and not have to restart the server every time.  -g means it's global, not local.
+
+to get an eslint rc, type eslint --init 
+
+in index.js, type:
+const express = require ('express);
+const app = express();
+
+app.get ('/location', (req, res) => {
+    res.json({
+        //this is an endpoint
+        formatted_query: 'Seattle, WA, USA',
+        latitude: '47.606210',
+        longtitude: '-122.332071',
+        });
+});
+ //there can be many endpoints
+
+app.listen{3001, () => { console.log('...)}}
+
+req= request (clients make requests)
+res= response (servers make responses)
+
+use postman to check if backend is working
+
+// wildstar will match everything, very important to put at the bottom.  this means there will always be a match and will return something, like a 404 error, if not found.
+
+app.get('*', (req, res) => ...) to make a fallback response.  This must be at the end or it will stop wherever it's placed in the code.
+
+//res.json is like the return statement.
+
+heroku login deploys the backend.   May need to install heroku cli, triple check!
+
+heroku create starts a heorku app.
