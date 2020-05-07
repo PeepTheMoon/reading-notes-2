@@ -1,0 +1,9 @@
+Notes on backend:
+
+under your app.get in index.js, you can console.log(req.query) to get the earch params.
+
+Use postman and your vscode terminal for debugging.
+
+req.query refers to things with a ? in the params, and req.params refers to anything after the :
+
+npm run tests:watch -- watches for changes in tests!
