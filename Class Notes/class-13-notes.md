@@ -6,7 +6,9 @@ to use the urlencoded forms
 
 npm run setup-db to drop and reseed tables
 
-npx create-alchemy-sql-be my-cool-project
+npx create-alchemy-sql-be my-cool-project to spin up a backend
+
+npx create-react-app
 starts a react app.  cd into it, code .
 npm i react-router-dom
 
@@ -18,3 +20,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(require('./middleware/error'));
 
 using <form> allows user to press enter to submit or use a button!
+
